@@ -25,7 +25,7 @@ SECRET_KEY = 'v%k)%f(0^8+o8ik58ng+o6v&)+ww@#ahsrtv5499cx)easz-4m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://cms-cc.herokuapp.com/']
 
 
 # Application definition
@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cmsapp',
-    'rest_framework',
-    'phonenumber_field',
+    'rest_framework',   
 ]
 
 MIDDLEWARE = [
@@ -50,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'cms.urls'
