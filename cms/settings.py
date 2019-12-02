@@ -88,7 +88,7 @@ DATABASES = {
 DEBUG = True
 if os.environ.get("DATABASE_URL") is not None:
     DATABASES['default'] = dj_database_url.config()
-    DEBUG = False
+    DEBUG = True
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
