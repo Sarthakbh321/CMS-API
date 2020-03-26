@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Form</title>
+</head>
+<body>
+    <h1>CMS Form</h1>
+
+    <form action="http://cms-sarthak2.herokuapp.com/det/" id="form">
+        <label for="rfid">RFID: </label>
+        <input type="number" name="rfid" placeholder="RFID" id="rfid">
+        <br>
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="Name" id="name">
+        <br>
+        <label for="event">Event Name: </label>
+        <input type="text" name="event" placeholder="Event Name" id="event">
+        <br>
+        <label for="phone">Phone Number: </label>
+        <input type="number" name="phone" placeholder="Phone number" id="phone">
+        <br>
+        <label for="mail">Email: </label>
+        <input type="email" name="mail" placeholder="email" id="mail">
+        <br>
+        <label for="reg">Registration Number: </label>
+        <input type="text" name="reg" placeholder="Registration Number" id="reg">
+        <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
